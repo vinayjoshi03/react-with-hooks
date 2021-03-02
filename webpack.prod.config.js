@@ -36,7 +36,7 @@ module.exports = {
   devServer: {
     historyApiFallback: true,
     proxy: {
-        "/api": "https://react-basic-hooks.herokuapp.com/"
+        "/api": "http://localhost:8080"
     }
   },
   plugins: [
