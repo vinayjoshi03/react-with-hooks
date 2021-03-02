@@ -30,7 +30,7 @@
     "web-vitals": "^1.1.0"
   },
   "scripts": {
-    "start": "webpack-dev-server --mode development",
+    "start": "webpack serve --mode production",
     "dev": "webpack serve --mode development --open",
     "build": "webpack --config=webpack.prod.config.js --mode production",
     "test": "react-scripts test",
