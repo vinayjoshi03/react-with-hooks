@@ -33,6 +33,12 @@ module.exports = {
       }
     ]
   },
+  devServer: {
+    historyApiFallback: true,
+    proxy: {
+        "/api": "https://react-basic-hooks.herokuapp.com/"
+    }
+  },
   plugins: [
     new HtmlWebpackPlugin({
       filename: "index.html",
