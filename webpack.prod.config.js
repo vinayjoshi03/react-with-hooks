@@ -7,7 +7,7 @@ module.exports = {
   output: {
     path: path.join(__dirname, "build"),
     filename: "bundle.js",
-    publicPath: './'
+    publicPath: '/'
   },
   module: {
     rules: [
@@ -32,12 +32,6 @@ module.exports = {
         }
       }
     ]
-  },
-  devServer: {
-    historyApiFallback: true,
-    proxy: {
-        "/api": "https://react-basic-hooks.herokuapp.com"
-    }
   },
   plugins: [
     new HtmlWebpackPlugin({
