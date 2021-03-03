@@ -30,12 +30,13 @@
     "web-vitals": "^1.1.0"
   },
   "scripts": {
-    "start": "webpack serve --mode production --config webpack.prod.config.js",
+    "start": "serve -s build",
     "dev": "webpack serve --mode development --open",
     "build": "webpack --config webpack.prod.config.js --mode production",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "heroku-prebuild": "npm install --dev"
+    "heroku-prebuild": "npm install --dev",
+    "heroku-postbuild": "npm run build"
   },
   "eslintConfig": {
     "extends": [
