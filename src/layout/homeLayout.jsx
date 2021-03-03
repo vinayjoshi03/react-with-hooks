@@ -1,5 +1,4 @@
 import React,{Component} from 'react'
-import HomeHeader from './homeHeader'
 
 class HomeLayout extends Component {
     constructor(props) {
@@ -8,7 +7,8 @@ class HomeLayout extends Component {
     render() {
         return (
             <div className="App">
-                <HomeHeader />
+                
+                
                 {this.props.children}
             </div>
         )
